@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('../assets/bg_main.png');
+    background-size: cover;
+}
+
+.container {
+    max-height: 100vh;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.168);
+    border-radius: 11px;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+input,
+button {
+    margin-top: 10px;
+    border-radius: 8px;
+    height: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.datetime {
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 11px;
+    padding: 5px;
+}
+
+#resultado {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.greenBg {
+    background-color: green;
+}
+
+.displayNone {
+    display: none;
+}
+
+.redBg {
+    display: block;
+    background-color: red;
+}
+
+.loading {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

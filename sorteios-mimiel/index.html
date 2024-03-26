@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteios Mimiel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./src/assets/RIFA_NEON_IMG-removebg-preview.png"
+        alt="logo_neon"
+        style="max-width: 400px; border-radius: 9px"
+      />
+      <h3>Prêmio: PS5 Slim Digital</h3>
+      <img
+        style="max-width: 350px; border-radius: 11px"
+        src="./src/assets/ps5.jpg"
+        alt="Produto sorteado"
+      />
+      <div>
+        <input
+          type="number"
+          id="max"
+          min="1"
+          placeholder="Quantidade de números"
+        />
+      </div>
+      <button id="sortear">Sortear</button>
+      <div id="loading" class="loading"></div>
+      <div id="resultado" class="displayNone greenBg"></div>
+      <div id="erros" class="displayNone redBg"></div>
+      <div id="baloes"></div>
+      <div class="datetime">
+        <div id="data"></div>
+        <div id="relogio"></div>
+      </div>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
